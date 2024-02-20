@@ -177,7 +177,7 @@ _G.WhiteListed = false
             end
         end
 if _G.WhiteListed or _G.bypasschothgngukhoi then
-_G.kick = true
+_G.kick = false
   if game.placeId == 8569358381 or game.placeId == 3237168 then
     local vu = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
