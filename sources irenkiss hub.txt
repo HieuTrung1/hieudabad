@@ -4514,7 +4514,7 @@ v:Activate()
     page2:Line()
     page2:Label("┇  COMPASS ┇ ")
         page2:Line()
-    page2:Toggle("Auto Claim 1",false,function(bool)
+    page2:Toggle("Auto Claim 1", true,function(bool)
                 getgenv().autosam = bool
                 while getgenv().autosam do wait(1)
                     pcall(function()
@@ -4530,7 +4530,7 @@ end)
             end)
         end
     end)
-    page2:Toggle("Auto Find Compass",false,function(bool)
+    page2:Toggle("Auto Find Compass", true,function(bool)
             getgenv().autofindsam = bool
             while getgenv().autofindsam do wait(0.3)
                 pcall(function()
@@ -4551,7 +4551,7 @@ end
     page2:Line()
         page2:Label("┇  DEVIL FRUIT ┇ (F9 TO CHECK FRUIT AND BOX) ")
             page2:Line()
-            page2:Toggle("Auto Pickup Fruit", false, function(fruitty)
+            page2:Toggle("Auto Pickup Fruit", true, function(fruitty)
 getgenv().pickkk = fruitty
 while getgenv().pickkk do wait()
     pcall(function()
@@ -4563,7 +4563,7 @@ end
 end)
 end
 end)
-page2:Toggle("Rare and Ultra Rare Fruit Checking", false, function(rnu)
+page2:Toggle("Rare and Ultra Rare Fruit Checking", true, function(rnu)
 getgenv().checkrnu = rnu
 while getgenv().checkrnu do wait()
     pcall(function()
