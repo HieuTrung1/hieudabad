@@ -4563,7 +4563,7 @@ end
 end)
 end
 end)
-page2:Toggle("Rare and Ultra Rare Fruit Checking", true, function(rnu)
+page2:Toggle("Rare and Ultra Rare Fruit Checking", false, function(rnu)
 getgenv().checkrnu = rnu
 while getgenv().checkrnu do wait()
     pcall(function()
