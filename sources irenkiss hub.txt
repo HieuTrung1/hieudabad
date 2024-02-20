@@ -3478,7 +3478,7 @@ page9:Line()
 page9:Toggle("Cannon Farm Mob", true, function(daxc)
     _G.autocannonslow = daxc
 end)
-page9:Toggle("Cannon Farm All Player", false, function(daxccc)
+page9:Toggle("Cannon Farm All Player", true, function(daxccc)
     _G.autocannonplr = daxccc
     end)
     spawn(function() -- autofarm teleport cannon
@@ -4323,7 +4323,7 @@ end)
                 end
             end
         end)
-                    page2:Toggle("Auto Spawn",false,function(spawn)
+                    page2:Toggle("Auto Spawn",true,function(spawn)
             _G.wekqwe = spawn
         end)
             spawn(function()
