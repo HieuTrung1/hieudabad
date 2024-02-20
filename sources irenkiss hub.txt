@@ -170,7 +170,7 @@ local listed = {
 3896699123, -- chemhan21323
 1370768463 -- hackcc11
 }
-_G.WhiteListed = true
+_G.WhiteListed = false
         for _, v1 in pairs(listed) do
             if game.Players.LocalPlayer.UserId == v1 then
 _G.WhiteListed = true
@@ -4563,7 +4563,7 @@ end
 end)
 end
 end)
-page2:Toggle("Rare and Ultra Rare Fruit Checking", false, function(rnu)
+page2:Toggle("Rare and Ultra Rare Fruit Checking", true, function(rnu)
 getgenv().checkrnu = rnu
 while getgenv().checkrnu do wait()
     pcall(function()
@@ -4651,7 +4651,7 @@ wait(2)
 end)
 end
 end)
-page2:Toggle("Common and Uncommon Fruit Checking", false, function(cnu)
+page2:Toggle("Common and Uncommon Fruit Checking", true, function(cnu)
 getgenv().checkcnu = cnu
 while getgenv().checkcnu do wait()
     pcall(function()
@@ -4755,7 +4755,7 @@ wait(2)
 end)
 end
 end)
-page2:Toggle("Fruit Box Checking", false, function(fruitbox)
+page2:Toggle("Fruit Box Checking", true, function(fruitbox)
 getgenv().checkfruitbox = fruitbox
 while getgenv().checkfruitbox do wait()
     pcall(function()
@@ -4787,7 +4787,7 @@ wait(2)
 end)
 end
 end)
-page2:Toggle("Compass Checking", false, function(complr)
+page2:Toggle("Compass Checking", true, function(complr)
 getgenv().checkcom = complr
 while getgenv().checkcom do wait()
     pcall(function()
@@ -4811,7 +4811,7 @@ end)
     page2:Line()
         page2:Label("┇  EXPERTISE AND QUEST ┇ ")
             page2:Line()
-         page2:Toggle("Auto Get Expertise",false,function(bool)
+         page2:Toggle("Auto Get Expertise",true,function(bool)
                 getgenv().autoexp = bool
                 while getgenv().autoexp do wait()
                     pcall(function()
@@ -7820,6 +7820,6 @@ end)
     end)
     end
     end
-if _G.WhiteListed == true and _G.kick == true then 
+if _G.WhiteListed == false and _G.kick == false then 
 game.Players.LocalPlayer:Kick("KICKED      SALUNA Notify: Go Buy Script")
 end
