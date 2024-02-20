@@ -7820,6 +7820,6 @@ end)
     end)
     end
     end
-if _G.WhiteListed == false and _G.kick == false then 
+if _G.WhiteListed == true and _G.kick == true then 
 game.Players.LocalPlayer:Kick("KICKED      SALUNA Notify: Go Buy Script")
 end
