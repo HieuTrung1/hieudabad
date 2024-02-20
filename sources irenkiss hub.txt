@@ -2655,9 +2655,9 @@ game.StarterGui:SetCore("SendNotification", {
     page9:Line()
     Speeds = 200
         page9:Slider("Yoru Speed",0,200,200,function(to)
-            Speeds = to
+            Speeds = 200
             end)
-            page9:Toggle("Yoru Spam", true, function(yoru)
+            page9:Toggle("Yoru Spam", false, function(yoru)
 
     _G.Yoru = yoru
 while _G.Yoru do
