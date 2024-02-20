@@ -2979,7 +2979,7 @@ game:GetService("Workspace").LocalPlayer.CharacterTrait.Health = 0
             end)
         end
     end)
-       page9:Toggle("Auto Spawn",true,function(spawn)
+       page9:Toggle("Auto Spawn", false,function(spawn)
             _G.AutoSpawnn = spawn
         end)
             spawn(function()
