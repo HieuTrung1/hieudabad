@@ -2577,25 +2577,25 @@ local remotes = {}
  end
  local plr = game.Players.LocalPlayer.Character.Name
 game.StarterGui:SetCore("SendNotification", {
-            Title = "This Messenge Sent From Saluna With Love",
-            Text = "Welcome To My Script! " ..plr,
+            Title = "hieu skid",
+            Text = "skid lai nha ko phai cua t " ..plr,
             Duration = 15
           })
           wait()
 game.StarterGui:SetCore("SendNotification", {
-            Title = "This Messenge Sent From Saluna With Love",
-            Text = "THIS SCRIPT IS MADE BY IRENKISS.",
+            Title = "hieu skid",
+            Text = "skid lai nha ko phai cua t",
             Duration = 15
           })
           wait()
 game.StarterGui:SetCore("SendNotification", {
-            Title = "This Messenge Sent From Saluna With Love",
-            Text = "DON'T ABUSE THIS SCRIPT TOO MUCH.",
+            Title = "hieu skid",
+            Text = "skid lai nha ko phai cua t",
             Duration = 15
           })
           wait()
  
-                local win = Flux:Window("SALUNA (G11)", "MADE BY IRENKISS", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
+                local win = Flux:Window("Cooki_Hieu", "HieuCooki Skid", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
                 Flux:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
         local page2 = win:Tab("FARMING", "http://www.roblox.com/asset/?id=9391995844")
         local page3 = win:Tab("ISLAND/TELEPORT", "http://www.roblox.com/asset/?id=9391995844")
@@ -4323,7 +4323,7 @@ end)
                 end
             end
         end)
-                    page2:Toggle("Auto Spawn", true,function(spawn)
+                    page2:Toggle("Auto Spawn",false,function(spawn)
             _G.wekqwe = spawn
         end)
             spawn(function()
@@ -4514,7 +4514,7 @@ v:Activate()
     page2:Line()
     page2:Label("┇  COMPASS ┇ ")
         page2:Line()
-    page2:Toggle("Auto Claim 1", true,function(bool)
+    page2:Toggle("Auto Claim 1",true,function(bool)
                 getgenv().autosam = bool
                 while getgenv().autosam do wait(1)
                     pcall(function()
@@ -4530,7 +4530,7 @@ end)
             end)
         end
     end)
-    page2:Toggle("Auto Find Compass", true,function(bool)
+    page2:Toggle("Auto Find Compass",true,function(bool)
             getgenv().autofindsam = bool
             while getgenv().autofindsam do wait(0.3)
                 pcall(function()
@@ -4563,7 +4563,7 @@ end
 end)
 end
 end)
-page2:Toggle("Rare and Ultra Rare Fruit Checking", false, function(rnu)
+page2:Toggle("Rare and Ultra Rare Fruit Checking", true, function(rnu)
 getgenv().checkrnu = rnu
 while getgenv().checkrnu do wait()
     pcall(function()
@@ -4811,7 +4811,7 @@ end)
     page2:Line()
         page2:Label("┇  EXPERTISE AND QUEST ┇ ")
             page2:Line()
-         page2:Toggle("Auto Get Expertise",false,function(bool)
+         page2:Toggle("Auto Get Expertise",true,function(bool)
                 getgenv().autoexp = bool
                 while getgenv().autoexp do wait()
                     pcall(function()
