@@ -6153,19 +6153,18 @@ end)
 
 game:GetService("Players").LocalPlayer:WaitForChild("Click"):FireServer(unpack(args))
 spawn(function() -- auto mixer
-    while wait() do
-        pcall(function()
-            if _G.automixer then
-                wait(1)
-                for i, v in pairs(game:GetService("Workspace").Island8.Kitchen:GetDescendants()) do
-                    if v:IsA("ClickDetector") then
-                        fireclickdetector(v)
-                    end
-                end
-            end
-        end)
+    getgenv().autodrinkmixer = poola
+        while getgenv().autodrinkmixer do wait(4)
+            pcall(function()
+                for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                    if v:IsA("Tool") and string.find(v.Name, "Juice") or string.find(v.Name, "Milk") or string.find(v.Name, "Cider") or string.find(v.Name, "Lemonade") or string.find(v.Name, "Smoothie") or string.find(v.Name, "Golden") then
+                                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
+v:Activate()
+                                        end
+                                    end
+            end)
     end
-end)
+    end)
 
 
 spawn(function() -- auto drink mixer
