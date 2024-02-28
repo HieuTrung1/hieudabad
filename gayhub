@@ -3843,7 +3843,7 @@ game:GetService("CoreGui").redui.MainSceen.Visible = true
 local Tap1 = Window:Taps("Farming")
 local page1 = Tap1:newpage()
 
-page1:Label(" ┇ Mob Farm ┇ ")
+page1:Label(" ngu loz ")
 
 local Dropdown = page1:Drop("Select Weapon",false, Wapon , function(abcdef) -- Use Selected <table> to auto select multiselection dropdown
     Weapon = abcdef
@@ -3891,7 +3891,7 @@ page1:Toggle("Max Charge Skill", false,function(auto100socool)
     _G.auto100rate = auto100socool
 end)
 
-page1:TextBox("Yoru Hits",". . .",function(stmavc)
+page1:TextBox("Yoru Hits","oc cac dien vao",function(stmavc)
     _G.yoruhit = stmavc
     print( _G.yoruhit)
 end)
@@ -3904,7 +3904,7 @@ end)
 
 local page2 = Tap1:newpage()
 
-page2:Label(" ┇ Other Farm ┇ ")
+page2:Label(" Gay Hub ")
 
 page2:Toggle("Cannon Farm (Fast)", false,function(daxc)
     _G.autocannon = daxc
