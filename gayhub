@@ -3906,7 +3906,7 @@ local page2 = Tap1:newpage()
 
 page2:Label(" Gay Hub ")
 
-page2:Toggle("Cannon Farm (Fast)", false,function(daxc)
+page2:Toggle("Dum Gay", false,function(daxc)
     _G.autocannon = daxc
 end)
 
