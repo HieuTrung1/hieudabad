@@ -3843,7 +3843,7 @@ game:GetService("CoreGui").redui.MainSceen.Visible = true
 local Tap1 = Window:Taps("Farming")
 local page1 = Tap1:newpage()
 
-page1:Label(" ngu loz ")
+page1:Label("ngu loz")
 
 local Dropdown = page1:Drop("Select Weapon",false, Wapon , function(abcdef) -- Use Selected <table> to auto select multiselection dropdown
     Weapon = abcdef
