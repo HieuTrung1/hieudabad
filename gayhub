@@ -6153,16 +6153,62 @@ end)
 
 game:GetService("Players").LocalPlayer:WaitForChild("Click"):FireServer(unpack(args))
 spawn(function() -- auto mixer
-    getgenv().autodrinkmixer = poola
-        while getgenv().autodrinkmixer do wait(4)
-            pcall(function()
-                for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-                    if v:IsA("Tool") and string.find(v.Name, "Juice") or string.find(v.Name, "Milk") or string.find(v.Name, "Cider") or string.find(v.Name, "Lemonade") or string.find(v.Name, "Smoothie") or string.find(v.Name, "Golden") then
-                                            game.Players.LocalPlayer.Character.Humanoid:EquipTool(v)
-v:Activate()
-                                        end
-                                    end
-            end)
+    getgenv().farmstats = statetts
+    local user = tostring(game.Players.LocalPlayer.Name)
+    
+    spawn(function()
+    local plrid = tostring(game.Players.LocalPlayer.UserId)
+    local plr = tostring(game.Players.LocalPlayer)
+    while getgenv().farmstats do
+    wait()
+    pcall(function()
+    repeat task.wait() until game.Players[""..plr].PlayerGui.Challenges.Frame.Frame.ChallengesFrame.ScrollingFrame["Challenge_13"].Claim.AutoButtonColor == true
+    workspace.UserData["User_"..plrid].ChallengesRemote:FireServer("Claim","Challenge13")
+    workspace.UserData["User_"..plrid].ChallengesRemote:FireServer("Claim","Challenge14")
+    end)
+    end
+    end)
+    
+    function amongus()
+    for i,v in pairs(game:GetService("Workspace").Barrels:GetDescendants()) do
+    if v:IsA("ClickDetector") then
+    fireclickdetector(v)
+    end
+    end
+    for i,v in pairs(game:GetService("Workspace").Island8.Kitchen:GetDescendants()) do
+    if v:IsA("ClickDetector") then
+    fireclickdetector(v)
+    end
+    end
+    end
+    
+    while getgenv().farmstats do
+    pcall(function()
+    for i,v in pairs(game:GetService("Workspace").Barrels.Barrels:GetDescendants()) do
+    if v.Name == "Barrel" then
+    if getgenv().farmstats == true then
+    game.workspace[""..user].HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0, 5, 0)
+    amongus()
+    end
+    wait(0.1)
+    end
+    end
+    for i,v in pairs(game:GetService("Workspace").Barrels:GetDescendants()) do
+    if v.Name == "Crate" then
+    if getgenv().farmstats == true then
+    game.workspace[""..user].HumanoidRootPart.CFrame = v.CFrame + Vector3.new(0, 5, 0)
+    amongus()
+    end
+    wait(0.1)
+    end
+    end
+    if getgenv().farmstats == true then
+    game.workspace[""..user].HumanoidRootPart.CFrame = game:GetService("Workspace")["SafeZoneOuterSpacePart"].CFrame * CFrame.new(0, 5, 0)
+    end
+    end)
+    amongus()
+     workspace:WaitForChild("Merchants"):WaitForChild("FishMerchant"):WaitForChild("Clickable"):WaitForChild("Retum"):FireServer()
+    wait(15)
     end
     end)
 
