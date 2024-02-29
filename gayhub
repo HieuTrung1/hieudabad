@@ -3975,9 +3975,29 @@ page2:Toggle("Quake Farm", false,function(daxcqacc)
     _G.quakefarm = daxcqacc
 end)
 
+page2:Toggle("Tp for camp player", false,function(adsjhdsf)
+    getgenv().adsjhdsf = adsjhdsf
+ while getgenv().adsjhdsf do wait()
+pcall(function()
+for i,c in pairs(game.Workspace:GetChildren()) do
+if c:IsA("Model") and c.Name == SelectedKillPlayer and c.Humanoid.Health > 0 then
+repeat wait()
+pcall(function()
+if getgenv().eadsjhdsf == true and c.Humanoid.Health > 0 then
+Choose2 = c.Name
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = c.HumanoidRootPart.CFrame * CFrame.new(0,distance,0)
+end
+end)
+until  c.Humanoid.Health <= 0 or not getgenv().adsjhdsf or c.Name ~= v.Name
+end
+end
+end)
+end
+end)
+
 page2:Toggle("Vamp Camp", false,function(daxcddsr)
    getgenv().daxcddsr = daxcddsr
-while getgenv().ghteqweqwzehjt do wait()
+while getgenv().daxcddsr do wait()
     pcall(function()
         for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
             if v.Name == Choose2 then
@@ -4008,7 +4028,7 @@ while getgenv().ghteqweqwzehjt do wait()
     end)
      end
     end)  
-    
+
 spawn(function()
     while wait() do
         pcall(function()
