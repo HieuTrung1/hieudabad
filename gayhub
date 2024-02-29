@@ -3831,7 +3831,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
 
 
 --script
-local Window = create:Win("Gay Hub")
+local Window = create:Win("ToggleUI: [ F6 ] ")
 game:GetService("CoreGui").redui.MainSceen.Visible = false
 
 --create:Notifile("", "   Welcome " .. game.Players.LocalPlayer.Name .. " To OP:L", 5)
@@ -3885,44 +3885,10 @@ end)]]
 
 
 
-page1:Label("Gay Hub")
+page1:Label(" ┇ This Is Why Game Dead ┇ ")
 
 page1:Toggle("Max Charge Skill", false,function(auto100socool)
     _G.auto100rate = auto100socool
-        end)
-        page5:Toggle("Anti Stun", false, function(bool)
-        getgenv().antistun = bool
-        while getgenv().antistun do wait()
-            pcall(function()
-local plr = game.Players.LocalPlayer.Character
-    repeat
-plr.BurnMagmaOverTime.Value = true
-plr.BurnOverTime.Value = true
-plr.CandyTouched.Value = true
-plr.Cheshire.Value = true
-plr.ChillyPunched.Value = true
-plr["DF_Disabled"].Value = false
-plr.GasPoison.Value = true
-plr.GasAirless.Value = true
-plr.GravityCrushed.Value = true
-plr.HeartStolen.Value = true
-plr.Hobbied.Value = true
-plr.HotBody.Value = true
-plr.HypnosisOnCooldown.Value = true
-plr.LoveStunned.Value = true
-plr.Mored.Value = true
-plr.Negative.Value = true
-plr.OpeSevered.Value = true
-plr.Returned.Value = true
-plr.RumbleStun.Value = true
-plr.SanguineVampiris.Value = true
-plr.SnowTouched.Value = true
-plr.Stringing.Value = true
-plr.VenomDoT.Value = true
-wait(0.06)
-    until plr.Humanoid.Health == 0
-end)
-end
 end)
 
 page1:TextBox("Yoru Hits",". . .",function(stmavc)
@@ -4008,39 +3974,7 @@ end)
 page2:Toggle("Quake Farm", false,function(daxcqacc)
     _G.quakefarm = daxcqacc
 end)
-page2:Toggle("Vamp Camp", false,function(cooki)
-    getgenv().ghteqweqwzehjt = cooki
-    while getgenv().ghteqweqwzehjt do wait()
-    pcall(function()
-        for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-            if v.Name == Choose2 then
-    local args = {
-        [1] = tonumber(serializeTable(remotes)),
-        [2] = "VampirePower5",
-        [3] = "StartCharging",
-        [4] = CFrame.new(-391.38922119140625, 213, -232.140625, 0.5274614095687866, -0.7214826345443726, 0.4486061632633209, -1.4901161193847656e-08, 0.5280334949493408, 0.8492236733436584, -0.8495790362358093, -0.44793272018432617, 0.2785172760486603),
-        [5] = workspace:WaitForChild("IslandWindmill"):WaitForChild("Beach"):WaitForChild("Beach"),
-        [9] = "Left"
-    }
-    
-    game:GetService("Players").LocalPlayer.Character.Powers.Vampire.RemoteEvent:FireServer(unpack(args))
-    wait()
-    local args = {
-        [1] = tonumber(serializeTable(remotes)),
-        [2] = "VampirePower5",
-        [3] = "StopCharging",
-        [4] = v.HumanoidRootPart.CFrame,
-        [5] = workspace:WaitForChild("IslandWindmill"):WaitForChild("OutterDune"):WaitForChild("Beach"),
-        [6] = 100
-    }
-    
-    game:GetService("Players").LocalPlayer.Character.Powers.Vampire.RemoteEvent:FireServer(unpack(args))
-    wait()
-    end
-     end
-    end)
-     end
-    end)
+
 spawn(function()
     while wait() do
         pcall(function()
@@ -6218,7 +6152,20 @@ spawn(function() -- fish farm
 end)
 
 game:GetService("Players").LocalPlayer:WaitForChild("Click"):FireServer(unpack(args))
-
+spawn(function() -- auto mixer
+    while wait() do
+        pcall(function()
+            if _G.automixer then
+                wait(1)
+                for i, v in pairs(game:GetService("Workspace").Island8.Kitchen:GetDescendants()) do
+                    if v:IsA("ClickDetector") then
+                        fireclickdetector(v)
+                    end
+                end
+            end
+        end)
+    end
+end)
 
 
 spawn(function() -- auto drink mixer
