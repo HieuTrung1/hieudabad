@@ -3831,7 +3831,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
 
 
 --script
-local Window = create:Win("ToggleUI: [ F6 ] ")
+local Window = create:Win("Gay Hub")
 game:GetService("CoreGui").redui.MainSceen.Visible = false
 
 --create:Notifile("", "   Welcome " .. game.Players.LocalPlayer.Name .. " To OP:L", 5)
@@ -6152,20 +6152,7 @@ spawn(function() -- fish farm
 end)
 
 game:GetService("Players").LocalPlayer:WaitForChild("Click"):FireServer(unpack(args))
-spawn(function() -- auto mixer
-    while wait() do
-        pcall(function()
-            if _G.automixer then
-                wait(1)
-                for i, v in pairs(game:GetService("Workspace").Island8.Kitchen:GetDescendants()) do
-                    if v:IsA("ClickDetector") then
-                        fireclickdetector(v)
-                    end
-                end
-            end
-        end)
-    end
-end)
+
 
 
 spawn(function() -- auto drink mixer
