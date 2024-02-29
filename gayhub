@@ -3977,7 +3977,7 @@ end)
 
 
 
-page5:Toggle("Vamp Camp (Skill 5)",false, function(bo12oylvcggqweg)
+page2:Toggle("Vamp Camp (Skill 5)",false, function(bo12oylvcggqweg)
     getgenv().ghteqweqwzehjt = bo12oylvcggqweg
 while getgenv().ghteqweqwzehjt do wait()
 pcall(function()
