@@ -3831,7 +3831,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
 
 
 --script
-local Window = create:Win("ToggleUI: [ F6 ] ")
+local Window = create:Win("Gay Hub")
 game:GetService("CoreGui").redui.MainSceen.Visible = false
 
 --create:Notifile("", "   Welcome " .. game.Players.LocalPlayer.Name .. " To OP:L", 5)
@@ -3975,26 +3975,7 @@ page2:Toggle("Quake Farm", false,function(daxcqacc)
     _G.quakefarm = daxcqacc
 end)
 
-page2:Toggle("Tp for camp player", false,function(adsjhdsf)
-    _G.tptocamp = adsjhdsf
-    getgenv().tptocamp = adsjhdsf
- while getgenv().tptocamp do wait()
-pcall(function()
-for i,c in pairs(game.Workspace:GetChildren()) do
-if c:IsA("Model") and c.Name == SelectedKillPlayer and c.Humanoid.Health > 0 then
-repeat wait()
-pcall(function()
-if getgenv().tptocamp == true and c.Humanoid.Health > 0 then
-Choose2 = c.Name
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = c.HumanoidRootPart.CFrame * CFrame.new(0,distance,0)
-end
-end)
-until  c.Humanoid.Health <= 0 or not getgenv().tptocamp or c.Name ~= v.Name
-end
-end
-end)
-end
-end)
+
 
 page2:Toggle("Vamp Camp", false,function(daxcddsr)
    getgenv().daxcddsr = daxcddsr
