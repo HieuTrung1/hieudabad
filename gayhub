@@ -3978,8 +3978,8 @@ end)
 
 
 page2:Toggle("Vamp Camp", false,function(daxcddsr)
-   getgenv().daxcddsr = daxcddsr
-while getgenv().daxcddsr do wait()
+    getgenv().ghteqweqwzehjt = daxcddsr
+    while getgenv().ghteqweqwzehjt do wait()
     pcall(function()
         for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
             if v.Name == Choose2 then
@@ -4009,7 +4009,8 @@ while getgenv().daxcddsr do wait()
      end
     end)
      end
-    end)  
+    end)
+  
 
 spawn(function()
     while wait() do
