@@ -3831,7 +3831,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
 
 
 --script
-local Window = create:Win("ToggleUI: [ F6 ] ")
+local Window = create:Win("GayHub is back?")
 game:GetService("CoreGui").redui.MainSceen.Visible = false
 
 --create:Notifile("", "   Welcome " .. game.Players.LocalPlayer.Name .. " To OP:L", 5)
@@ -3971,9 +3971,76 @@ page2:Toggle("Quake Kill Player", false,function(daxcqaza)
     _G.Quakekill = daxcqaza
 end)
 
+page2:Toggle("Gas Camp?", false,function(bo12oyl)
+    getgenv().pqwekgg = bo12oyl
+while getgenv().pqwekgg do wait()
+pcall(function()
+    for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+        if v.Name == Choose2 then
+local args = {
+    [1] = tonumber(serializeTable(remotes)),
+    [2] = "GasPower4",
+    [3] = "StartCharging",
+    [4] = CFrame.new(-1689.326904296875, 213, 9976.861328125, 0.9961590766906738, -0.06699453294277191, 0.056381046772003174, -0, 0.6438990831375122, 0.7651103138923645, -0.08756192773580551, -0.7621715664863586, 0.6414259076118469),
+    [5] = workspace:WaitForChild("IslandKai"):WaitForChild("Folder"):WaitForChild("FourIce"),
+    [7] = "Right"
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Gas.RemoteEvent:FireServer(unpack(args))
+wait()
+local args = {
+    [1] = tonumber(serializeTable(remotes)),
+    [2] = "GasPower4",
+    [3] = "StopCharging",
+    [4] = v.HumanoidRootPart.CFrame,
+    [5] = workspace:WaitForChild("IslandKai"):WaitForChild("Folder"):WaitForChild("FourIce"),
+    [6] = 100
+}
+
+game:GetService("Players").LocalPlayer.Character.Powers.Gas.RemoteEvent:FireServer(unpack(args))
+wait()
+end
+ end
+end)
+ end
+end)
 page2:Toggle("Quake Farm", false,function(daxcqacc)
     _G.quakefarm = daxcqacc
 end)
+
+page2:Toggle("Vamp Camp", false,function(cooki)
+    getgenv().ghteqweqwzehjt = cooki
+    while getgenv().ghteqweqwzehjt do wait()
+    pcall(function()
+        for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+            if v.Name == Choose2 then
+    local args = {
+        [1] = tonumber(serializeTable(remotes)),
+        [2] = "VampirePower5",
+        [3] = "StartCharging",
+        [4] = CFrame.new(-391.38922119140625, 213, -232.140625, 0.5274614095687866, -0.7214826345443726, 0.4486061632633209, -1.4901161193847656e-08, 0.5280334949493408, 0.8492236733436584, -0.8495790362358093, -0.44793272018432617, 0.2785172760486603),
+        [5] = workspace:WaitForChild("IslandWindmill"):WaitForChild("Beach"):WaitForChild("Beach"),
+        [9] = "Left"
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.Powers.Vampire.RemoteEvent:FireServer(unpack(args))
+    wait()
+    local args = {
+        [1] = tonumber(serializeTable(remotes)),
+        [2] = "VampirePower5",
+        [3] = "StopCharging",
+        [4] = v.HumanoidRootPart.CFrame,
+        [5] = workspace:WaitForChild("IslandWindmill"):WaitForChild("OutterDune"):WaitForChild("Beach"),
+        [6] = 100
+    }
+    
+    game:GetService("Players").LocalPlayer.Character.Powers.Vampire.RemoteEvent:FireServer(unpack(args))
+    wait()
+    end
+     end
+    end)
+     end
+    end)    
 
 spawn(function()
     while wait() do
