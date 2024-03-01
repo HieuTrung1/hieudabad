@@ -6897,7 +6897,7 @@ end
 end)
 end
 end)
-    page5:Button("Quake Camp", function()
+    page5:Toggle("Quake Camp" , false, function(state)
 _G.AutoQuake = state
 while _G.AutoQuake do
     wait()
