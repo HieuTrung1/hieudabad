@@ -3973,6 +3973,12 @@ page1:Button("Check Fruit Webhook or F9",function()
         end
     end
 end)
+
+page1:Toggle("Auto Save" , getgenv().Save["AutoSave"],function(t)
+    getgenv().Save["AutoSave"] = t
+    SaveSetting()
+end)
+
 --[[
 page1:Toggle("Auto Buso Haki", false,function(dmmsvezb)
     _G.autobuso = dmmsvezb
