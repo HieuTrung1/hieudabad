@@ -6786,7 +6786,7 @@ end)
         page5:Toggle("Bring Player",false,function(bool)
             _G.BringPlayer = bool
         end)
-        bringdistanceplr = 4
+        bringdistanceplr = 5
         page5:Slider("Bring Distance",-50,50,27,function(bringplrdis)
         bringdistanceplr = bringplrdis
         end)
