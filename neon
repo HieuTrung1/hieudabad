@@ -4493,7 +4493,7 @@ page3:Button("Test WebHook",function()
         ["embeds"] = {
             {
                 ["title"] = " Gay Hub made by hieuuuuuuuuuuuuuuuuuuuuu",
-                ["description"] = "Neon was here",
+                ["description"] = "Gay Hub is here",
                 ["type"] = "rich",
                 ["color"] = tonumber(0xff8200),
             }
