@@ -6898,38 +6898,25 @@ end)
 end
 end)
     page5:Toggle("Quake Camp" , false, function(state)
-        getgenv().shhshhdhs = state
-        while getgenv().shhshhdhs do wait()
-        pcall(function()
-            for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-                if v.Name == Choose2 then
-        local args = {
-            [1] = tonumber(serializeTable(remotes)),
-            [2] = "QuakePower4",
-            [3] = "StartCharging",
-            [4] = CFrame.new(-391.38922119140625, 213, -232.140625, 0.5274614095687866, -0.7214826345443726, 0.4486061632633209, -1.4901161193847656e-08, 0.5280334949493408, 0.8492236733436584, -0.8495790362358093, -0.44793272018432617, 0.2785172760486603),
-            [5] = workspace:WaitForChild("IslandWindmill"):WaitForChild("Beach"):WaitForChild("Beach"),
-            [9] = "Left"
-        }
-        
-        game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(vppt,"QuakePower4", "StopCharging",workspace.IslandCaver.Stones.Stone,v.HumanoidRootPart.CFrame,100,Vector3.new(-290.4129333496094, 266.8401794433594, -103.8988037109375))
-        wait(0.15)
-        local args = {
-            [1] = tonumber(serializeTable(remotes)),
-            [2] = "QuakePower4",
-            [3] = "StopCharging",
-            [4] = v.HumanoidRootPart.CFrame,
-            [5] = workspace:WaitForChild("IslandWindmill"):WaitForChild("OutterDune"):WaitForChild("Beach"),
-            [6] = 100
-        }
-        
-        game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(vppt,"QuakePower4", "StopCharging",workspace.IslandCaver.Stones.Stone,v.HumanoidRootPart.CFrame,100,Vector3.new(-290.4129333496094, 266.8401794433594, -103.8988037109375))
+        getgenv().gay = state
+while getgen().gay do
+    wait()
+local x = getsenv(game:GetService("Players").LocalPlayer.Character.Powers.Quake)
+local vppt = x.VTCebvc
+    repeat wait()
+    pcall(function()
+    if getgen().gay == true and game.Players:FindFirstChild(Choose2).Character.Humanoid.Health > 0 then
+    for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+        if v.Name == Choose2 then
+            game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(vppt,"QuakePower4", "StopCharging",workspace.IslandCaver.Stones.Stone,v.HumanoidRootPart.CFrame,100,Vector3.new(-290.4129333496094, 266.8401794433594, -103.8988037109375))
         wait(0.15)
         end
-         end
-        end)
-         end
-        end)
+    end
+    end
+    end)
+    until game.Players:FindFirstChild(SelectedKillPlayer).Character.Humanoid.Health <= 0 or not _G.AutoQuake
+    end
+end)
 ----------
 page5:Toggle("Light Camp" ,false, function(campbylight)
 getgenv().campto2 = campbylight
