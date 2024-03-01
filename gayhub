@@ -3831,7 +3831,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
 
 
 --script
-local Window = create:Win("GayHub is back?")
+local Window = create:Win("ToggleUI: [ F6 ] ")
 game:GetService("CoreGui").redui.MainSceen.Visible = false
 
 --create:Notifile("", "   Welcome " .. game.Players.LocalPlayer.Name .. " To OP:L", 5)
@@ -3878,107 +3878,6 @@ end)
 page1:Toggle("Auto Claim Quest", false,function(dmmsv)
     _G.autoquest = dmmsv
 end)
-
-page1:Button("Test WebHook",function()
-    pcall(function()
-        local url = getgenv().Save["WebHookText"]
-        local data = {
-        ["content"] = "Test Webhook",
-        ["embeds"] = {
-            {
-                ["title"] = " Gay Hub made by hieuuuuuuuuuuuuuuuuuuuuu",
-                ["description"] = "Gay Hub is here",
-                ["type"] = "rich",
-                ["color"] = tonumber(0xff8200),
-            }
-        }
-        }
-        local newdata = game:GetService("HttpService"):JSONEncode(data)
-    
-        local headers = {
-        ["content-type"] = "application/json"
-        }
-        request = http_request or request or HttpPost or syn.request
-        local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-        request(abcdef)
-    end)
-end)
-
-page1:Toggle("Webhook Player",getgenv().Save["Webhookfp"],function(x)
-    getgenv().Save["Webhookfp"] = x
-    if getgenv().Save["AutoSave"] then
-        SaveSetting()
-    end
-end)
-
-page1:Toggle("WebHook Fruit",getgenv().Save["WebHookTF"],function(x)
-    getgenv().Save["WebHookTF"] = x
-    if getgenv().Save["AutoSave"] then
-        SaveSetting()
-    end
-end)
-
-page1:Button("Check Fruit Webhook or F9",function()
-    for i,v in pairs(game:GetService("Players"):GetChildren()) do
-        for x,y in pairs(v.Backpack:GetChildren()) do
-                if (string.find(y.Name, "Quake") or string.find(y.Name, "Phoenix") or string.find(y.Name, "Dark") or string.find(y.Name, "Vampire") or string.find(y.Name, "Grayity") or string.find(y.Name, "Ope") or string.find(y.Name, "Venom") or string.find(y.Name, "Candy Fruit") or string.find(y.Name, "Hollow")or string.find(y.Name, "Chilly")or string.find(y.Name, "Gas")or string.find(y.Name, "Flare")or string.find(y.Name, "Light")or string.find(y.Name, "Smoke")or string.find(y.Name, "Rumble")or string.find(y.Name, "Sand")or string.find(y.Name, "Magma")or string.find(y.Name, "Snow")) then
-                    print("Player:" .. y.Name .. y.Parent.Parent.Name .. "\n" .. y.ToolTip)
-                    pcall(function()
-                        local url = getgenv().Save["WebHookText"]
-                        local data = {
-                        ["content"] = "@everyone",
-                        ["embeds"] = {
-                            {
-                                ["title"] = " Gay Hub made by hieucooki Congratulation The keeper DF has been found",
-                                ["description"] = "Username: " .."".. y.Parent.Parent.Name .. "".. "\nFruit: " ..  y.Name .."\n"..y.ToolTip.. "\nStop Hop Sever",
-                                ["type"] = "rich",
-                                ["color"] = tonumber(0xff8200),
-                            }
-                        }
-                        }
-                        local newdata = game:GetService("HttpService"):JSONEncode(data)
-                    
-                        local headers = {
-                        ["content-type"] = "application/json"
-                        }
-                        request = http_request or request or HttpPost or syn.request
-                        local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-                        request(abcdef)
-                        print("AA")
-                    end)
-                elseif y.Parent.Parent.Name ~= plr.Name and string.find(y.Name, "Fruit") and not string.find(y.Name, "Quake") and not string.find(y.Name, "Phoenix") and not string.find(y.Name, "Dark") and not string.find(y.Name, "Vampire") and not string.find(y.Name, "Grayity") and not string.find(y.Name, "Ope") and not string.find(y.Name, "Venom") and not string.find(y.Name, "Candy Fruit") and not string.find(y.Name, "Hollow")and not string.find(y.Name, "Chilly")and not string.find(y.Name, "Gas")and not string.find(y.Name, "Flare")and not string.find(y.Name, "Light")and not string.find(y.Name, "Smoke")and not string.find(y.Name, "Rumble")and not string.find(y.Name, "Sand")and not string.find(y.Name, "Magma")and not string.find(y.Name, "Snow") then
-                    print("Player:" .. y.Name .. y.Parent.Parent.Name .. "\n" .. y.ToolTip)
-                    local url = getgenv().Save["WebHookText"]
-                        local data = {
-                        ["content"] = "The keeper DF has been found",
-                        ["embeds"] = {
-                            {
-                                ["title"] = "Neon",
-                                ["description"] = "Username: " .."||".. y.Parent.Parent.Name .. "||".. "\nFruit: " ..  y.Name .."\n"..y.ToolTip.."\nHop Sever Now",
-                                ["type"] = "rich",
-                                ["color"] = tonumber(0xff8200),
-                            }
-                        }
-                        }
-                        local newdata = game:GetService("HttpService"):JSONEncode(data)
-                    
-                        local headers = {
-                        ["content-type"] = "application/json"
-                        }
-                        request = http_request or request or HttpPost or syn.request
-                        local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-                        request(abcdef)
-                    print("A")
-                end
-        end
-    end
-end)
-
-page1:Toggle("Auto Save" , getgenv().Save["AutoSave"],function(t)
-    getgenv().Save["AutoSave"] = t
-    SaveSetting()
-end)
-
 --[[
 page1:Toggle("Auto Buso Haki", false,function(dmmsvezb)
     _G.autobuso = dmmsvezb
@@ -4072,76 +3971,9 @@ page2:Toggle("Quake Kill Player", false,function(daxcqaza)
     _G.Quakekill = daxcqaza
 end)
 
-page2:Toggle("Gas Camp?", false,function(bo12oyl)
-    getgenv().pqwekgg = bo12oyl
-while getgenv().pqwekgg do wait()
-pcall(function()
-    for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-        if v.Name == Choose2 then
-local args = {
-    [1] = tonumber(serializeTable(remotes)),
-    [2] = "GasPower4",
-    [3] = "StartCharging",
-    [4] = CFrame.new(-1689.326904296875, 213, 9976.861328125, 0.9961590766906738, -0.06699453294277191, 0.056381046772003174, -0, 0.6438990831375122, 0.7651103138923645, -0.08756192773580551, -0.7621715664863586, 0.6414259076118469),
-    [5] = workspace:WaitForChild("IslandKai"):WaitForChild("Folder"):WaitForChild("FourIce"),
-    [7] = "Right"
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Gas.RemoteEvent:FireServer(unpack(args))
-wait()
-local args = {
-    [1] = tonumber(serializeTable(remotes)),
-    [2] = "GasPower4",
-    [3] = "StopCharging",
-    [4] = v.HumanoidRootPart.CFrame,
-    [5] = workspace:WaitForChild("IslandKai"):WaitForChild("Folder"):WaitForChild("FourIce"),
-    [6] = 100
-}
-
-game:GetService("Players").LocalPlayer.Character.Powers.Gas.RemoteEvent:FireServer(unpack(args))
-wait()
-end
- end
-end)
- end
-end)
 page2:Toggle("Quake Farm", false,function(daxcqacc)
     _G.quakefarm = daxcqacc
 end)
-
-page2:Toggle("Vamp Camp", false,function(cooki)
-    getgenv().ghteqweqwzehjt = cooki
-    while getgenv().ghteqweqwzehjt do wait()
-    pcall(function()
-        for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
-            if v.Name == Choose2 then
-    local args = {
-        [1] = tonumber(serializeTable(remotes)),
-        [2] = "VampirePower5",
-        [3] = "StartCharging",
-        [4] = CFrame.new(-391.38922119140625, 213, -232.140625, 0.5274614095687866, -0.7214826345443726, 0.4486061632633209, -1.4901161193847656e-08, 0.5280334949493408, 0.8492236733436584, -0.8495790362358093, -0.44793272018432617, 0.2785172760486603),
-        [5] = workspace:WaitForChild("IslandWindmill"):WaitForChild("Beach"):WaitForChild("Beach"),
-        [9] = "Left"
-    }
-    
-    game:GetService("Players").LocalPlayer.Character.Powers.Vampire.RemoteEvent:FireServer(unpack(args))
-    wait()
-    local args = {
-        [1] = tonumber(serializeTable(remotes)),
-        [2] = "VampirePower5",
-        [3] = "StopCharging",
-        [4] = v.HumanoidRootPart.CFrame,
-        [5] = workspace:WaitForChild("IslandWindmill"):WaitForChild("OutterDune"):WaitForChild("Beach"),
-        [6] = 100
-    }
-    
-    game:GetService("Players").LocalPlayer.Character.Powers.Vampire.RemoteEvent:FireServer(unpack(args))
-    wait()
-    end
-     end
-    end)
-     end
-    end)    
 
 spawn(function()
     while wait() do
