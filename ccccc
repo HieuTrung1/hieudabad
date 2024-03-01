@@ -34,7 +34,7 @@ Reduisceen.Parent = game:GetService("CoreGui")
 Reduisceen.Name = "redui"
 Reduisceen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 game.Players.LocalPlayer.Chatted:Connect(function(bool)
-	if bool == "n" then
+	if bool == "5" then
 		game.CoreGui["redui"].Enabled =  not game.CoreGui["redui"].Enabled
 	end
 end)
@@ -121,7 +121,7 @@ function create:Win(text)
 
     local Main_UiConner  = Instance.new("UICorner")
 
-    Main_UiConner.CornerRadius = UDim.new(0, 4)
+    Main_UiConner.CornerRadius = UDim.new(0, 5)
     Main_UiConner.Name = "Main_UiConner"
     Main_UiConner.Parent = MainSceen
 
