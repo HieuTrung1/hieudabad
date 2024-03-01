@@ -3627,7 +3627,7 @@ return top
 end
 
 
-local Window = create:Win("Nothing Hub")
+local Window = create:Win("Gay Hub is back?")
 
 game:GetService("CoreGui").redui.MainSceen.Visible = false
 
@@ -4521,7 +4521,7 @@ page3:Button("Check Fruit Webhook or F9",function()
                         ["content"] = "@everyone",
                         ["embeds"] = {
                             {
-                                ["title"] = " Neon Congratulation The keeper DF has been found",
+                                ["title"] = " Gay Hub made by hieucooki Congratulation The keeper DF has been found",
                                 ["description"] = "Username: " .."".. y.Parent.Parent.Name .. "".. "\nFruit: " ..  y.Name .."\n"..y.ToolTip.. "\nStop Hop Sever",
                                 ["type"] = "rich",
                                 ["color"] = tonumber(0xff8200),
