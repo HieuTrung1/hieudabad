@@ -3831,7 +3831,7 @@ for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) 
 
 
 --script
-local Window = create:Win("Gay Hub is back? ")
+local Window = create:Win("ToggleUI: [ F6 ] ")
 game:GetService("CoreGui").redui.MainSceen.Visible = false
 
 --create:Notifile("", "   Welcome " .. game.Players.LocalPlayer.Name .. " To OP:L", 5)
@@ -4136,10 +4136,6 @@ end)
 
 page3:Toggle("Bring Compass", false,function(fruit)
     _G.BringFruit = fruit
-end)
-
-page3:Toggle("Webhook Player",getgenv().Save["Webhookfp"],function(x)
-    getgenv().Save["Webhookfp"] = x
 end)
 
 --
