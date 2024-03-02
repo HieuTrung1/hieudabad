@@ -4140,9 +4140,6 @@ end)
 
 page3:Toggle("Webhook Player",getgenv().Save["Webhookfp"],function(x)
     getgenv().Save["Webhookfp"] = x
-    if getgenv().Save["AutoSave"] then
-        SaveSetting()
-    end
 end)
 
 --
