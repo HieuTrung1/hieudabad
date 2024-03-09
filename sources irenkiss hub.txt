@@ -4323,7 +4323,7 @@ end)
                 end
             end
         end)
-                    page2:Toggle("Auto Spawn",false,function(spawn)
+                    page2:Toggle("Auto Spawn",true,function(spawn)
             _G.wekqwe = spawn
         end)
             spawn(function()
@@ -4381,7 +4381,7 @@ game.Players.LocalPlayer.Character.Humanoid.Health = 0
                     end)
             end
             end)
-     page2:Toggle("Auto Die For Farming (no tp method)",false,function(fr)
+     page2:Toggle("Auto Die For Farming (no tp method)",true,function(fr)
         getgenv().autodiee = fr
         while getgenv().autodiee do wait()
             pcall(function()
@@ -6786,7 +6786,7 @@ end)
         page5:Toggle("Bring Player",false,function(bool)
             _G.BringPlayer = bool
         end)
-        bringdistanceplr = 4
+        bringdistanceplr = 5
         page5:Slider("Bring Distance",-50,50,27,function(bringplrdis)
         bringdistanceplr = bringplrdis
         end)
@@ -6898,13 +6898,14 @@ end)
 end
 end)
     page5:Toggle("Quake Camp" , false, function(state)
-        getgenv().hieudz = state
-while getgenv().hieudz dowait()
+_G.AutoQuake = state
+while _G.AutoQuake do
+    wait()
 local x = getsenv(game:GetService("Players").LocalPlayer.Character.Powers.Quake)
 local vppt = x.VTCebvc
     repeat wait()
     pcall(function()
-    if getgenv().hieudz == true and game.Players:FindFirstChild(Choose2).Character.Humanoid.Health > 0 then
+    if _G.AutoQuake == true and game.Players:FindFirstChild(Choose2).Character.Humanoid.Health > 0 then
     for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
         if v.Name == Choose2 then
             game:GetService("Players").LocalPlayer.Character.Powers.Quake.RemoteEvent:FireServer(vppt,"QuakePower4", "StopCharging",workspace.IslandCaver.Stones.Stone,v.HumanoidRootPart.CFrame,100,Vector3.new(-290.4129333496094, 266.8401794433594, -103.8988037109375))
