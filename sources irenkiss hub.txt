@@ -6759,8 +6759,8 @@ page5:Line()
                 Player:Add(v.Name)
             end
         end)
-                            distance = 15
-        page5:Slider("Distance",  0, 200,15,function(bool)
+                            distance = 2
+        page5:Slider("Distance",  0, 200,2,function(bool)
             distance = bool
         end)
         page5:Toggle("Teleport To Camp (Distance)",false,function(boolllllasz)
