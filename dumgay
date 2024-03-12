@@ -2577,25 +2577,25 @@ local remotes = {}
  end
  local plr = game.Players.LocalPlayer.Character.Name
 game.StarterGui:SetCore("SendNotification", {
-            Title = "hieu skid",
-            Text = "skid lai nha ko phai cua t " ..plr,
+            Title = "This Messenge Sent From Saluna With Love",
+            Text = "Welcome To My Script! " ..plr,
             Duration = 15
           })
           wait()
 game.StarterGui:SetCore("SendNotification", {
-            Title = "hieu skid",
-            Text = "skid lai nha ko phai cua t",
+            Title = "This Messenge Sent From Saluna With Love",
+            Text = "THIS SCRIPT IS MADE BY IRENKISS.",
             Duration = 15
           })
           wait()
 game.StarterGui:SetCore("SendNotification", {
-            Title = "hieu skid",
-            Text = "skid lai nha ko phai cua t",
+            Title = "This Messenge Sent From Saluna With Love",
+            Text = "DON'T ABUSE THIS SCRIPT TOO MUCH.",
             Duration = 15
           })
           wait()
  
-                local win = Flux:Window("Cooki_Hieu", "HieuCooki Skid", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
+                local win = Flux:Window("SALUNA (G11)", "MADE BY IRENKISS", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
                 Flux:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
         local page2 = win:Tab("FARMING", "http://www.roblox.com/asset/?id=9391995844")
         local page3 = win:Tab("ISLAND/TELEPORT", "http://www.roblox.com/asset/?id=9391995844")
@@ -3475,10 +3475,10 @@ end)
 page9:Line()
 page9:Label("┇ CANNON FARM ┇")
 page9:Line()
-page9:Toggle("Cannon Farm Mob", true, function(daxc)
+page9:Toggle("Cannon Farm Mob", false, function(daxc)
     _G.autocannonslow = daxc
 end)
-page9:Toggle("Cannon Farm All Player", true, function(daxccc)
+page9:Toggle("Cannon Farm All Player", false, function(daxccc)
     _G.autocannonplr = daxccc
     end)
     spawn(function() -- autofarm teleport cannon
@@ -4514,7 +4514,7 @@ v:Activate()
     page2:Line()
     page2:Label("┇  COMPASS ┇ ")
         page2:Line()
-    page2:Toggle("Auto Claim 1",true,function(bool)
+    page2:Toggle("Auto Claim 1",false,function(bool)
                 getgenv().autosam = bool
                 while getgenv().autosam do wait(1)
                     pcall(function()
@@ -4530,7 +4530,7 @@ end)
             end)
         end
     end)
-    page2:Toggle("Auto Find Compass",true,function(bool)
+    page2:Toggle("Auto Find Compass",false,function(bool)
             getgenv().autofindsam = bool
             while getgenv().autofindsam do wait(0.3)
                 pcall(function()
@@ -4811,7 +4811,7 @@ end)
     page2:Line()
         page2:Label("┇  EXPERTISE AND QUEST ┇ ")
             page2:Line()
-         page2:Toggle("Auto Get Expertise",true,function(bool)
+         page2:Toggle("Auto Get Expertise",false,function(bool)
                 getgenv().autoexp = bool
                 while getgenv().autoexp do wait()
                     pcall(function()
@@ -6759,8 +6759,8 @@ page5:Line()
                 Player:Add(v.Name)
             end
         end)
-                            distance = 2
-        page5:Slider("Distance",  0, 200,2,function(bool)
+                            distance = 15
+        page5:Slider("Distance",  0, 200,15,function(bool)
             distance = bool
         end)
         page5:Toggle("Teleport To Camp (Distance)",false,function(boolllllasz)
@@ -7158,7 +7158,7 @@ end)
  end
 end)
 --------
-         page5:Toggle("Vamp Camp (Skill 5)",false, function(bo12oylvcggqweg)
+    page5:Toggle("Vamp Camp (Skill 5)",false, function(bo12oylvcggqweg)
             getgenv().ghteqweqwzehjt = bo12oylvcggqweg
 while getgenv().ghteqweqwzehjt do wait()
 pcall(function()
