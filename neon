@@ -1,3 +1,5 @@
-getgenv().Key = "MARU-52O9Z-X9JT-V21VS-PPSJ-2JT5"
-getgenv().id = "814454014171021322"
-loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruBitkub/main/Mobile.lua"))()
+script_key = "chxjIzEmnCBqXWnvKmiEHzUPKUeXdcUG"
+getgenv().Team = "Pirates"
+getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
+getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
