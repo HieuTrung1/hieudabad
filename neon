@@ -1,5 +1,4 @@
-script_key = "chxjIzEmnCBqXWnvKmiEHzUPKUeXdcUG"
-getgenv().Team = "Pirates"
-getgenv().FixCrash = false -- Turn it On For Hopping Server, Improve Performance But Silent Aim On Mob And Player
-getgenv().FixCrash2 = false -- Turn it On For Hopping Server, Improve Performance But Will Remove Speed Changer
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+_G.key = "a4ff65191e274ee59a31b3f571533e8d"
+
+_G.Game = "OPL"--OPADupe
+loadstring(game:HttpGet("https://gitlab.com/vugiakhiem2106/Paid/-/raw/main/PaidScriptLoader.lua"))()
