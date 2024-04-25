@@ -3877,7 +3877,7 @@ end)
         page1:Textbox("Fake Haki", "", true, function(Value)
             game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Haki.Text = "Haki: "..Value
     end)
-                page1:Textbox("Fake Gems", "", true, function(Value)
+                page1:Textbox("Gems", "", true, function(Value)
        game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.A.Gems.GemsAmount.Text = "" ..Value
     end)
             page1:Textbox("Fake Beri", "", true, function(Value)
@@ -5576,12 +5576,12 @@ end)
     
        end
     )
-    hakitarget = 25
-    page2:Slider("Haki Target %",  1, 100,25,function(gmm)
+    hakitarget = 100
+    page2:Slider("Haki Target %",  1, 100,100,function(gmm)
     hakitarget = gmm
     end)
-        hakispeed = 5
-    page2:Slider("Haki Speed",  1, 20,5,function(gttmm)
+        hakispeed = 20
+    page2:Slider("Haki Speed",  1, 20,20,function(gttmm)
     hakispeed = gttmm
     end)
     page2:Toggle("Auto Farm Haki",false, function(vccl)
@@ -6003,7 +6003,7 @@ end
     page4:Label(" ┇ AFFINITIES ┇ ")
         page4:Line()
         
-affpoint = 8
+affpoint = 9
 affty = 1.9
 page4:Slider("Affinities Point", 1, 10, 8,function(treo)
 affpoint = treo
