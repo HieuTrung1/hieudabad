@@ -2595,7 +2595,7 @@ game.StarterGui:SetCore("SendNotification", {
           })
           wait()
  
-                local win = Flux:Window("SALUNA (G11)", "MADE BY IRENKISS", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
+                local win = Flux:Window("thx irenkiss ^^", "irenkiss dz", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
                 Flux:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
         local page2 = win:Tab("FARMING", "http://www.roblox.com/asset/?id=9391995844")
         local page3 = win:Tab("ISLAND/TELEPORT", "http://www.roblox.com/asset/?id=9391995844")
@@ -5576,8 +5576,8 @@ end)
     
        end
     )
-    hakitarget = 100
-    page2:Slider("Haki Target %",  1, 100,100,function(gmm)
+    hakitarget = 99
+    page2:Slider("Haki Target %",  1, 100,99,function(gmm)
     hakitarget = gmm
     end)
         hakispeed = 20
@@ -6003,9 +6003,9 @@ end
     page4:Label(" ┇ AFFINITIES ┇ ")
         page4:Line()
         
-affpoint = 9
-affty = 1.9
-page4:Slider("Affinities Point", 1, 10, 8,function(treo)
+affpoint = 10
+affty = 2
+page4:Slider("Affinities Point", 1, 10, 10,function(treo)
 affpoint = treo
 if affpoint == 1 then affty = 1.1
 elseif affpoint == 2 then affty = 1.2
