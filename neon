@@ -6004,7 +6004,7 @@ end
         page4:Line()
         
 affpoint = 9
-affty = 9
+affty = 1.9
 page4:Slider("Affinities Point", 1, 10, 10,function(treo)
 affpoint = treo
 if affpoint == 1 then affty = 1.1
