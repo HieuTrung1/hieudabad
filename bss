@@ -2595,7 +2595,7 @@ game.StarterGui:SetCore("SendNotification", {
           })
           wait()
  
-                local win = Flux:Window("thx irenkiss ^^", "irenkiss dz", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
+                local win = Flux:Window("hieu dz", "tuan ngu lon", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
                 Flux:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
         local page2 = win:Tab("FARMING", "http://www.roblox.com/asset/?id=9391995844")
         local page3 = win:Tab("ISLAND/TELEPORT", "http://www.roblox.com/asset/?id=9391995844")
@@ -6003,9 +6003,9 @@ end
     page4:Label(" ┇ AFFINITIES ┇ ")
         page4:Line()
         
-affpoint = 10
-affty = 2
-page4:Slider("Affinities Point", 1, 10, 10,function(treo)
+affpoint = 9
+affty = 1.9
+page4:Slider("Affinities Point", 1, 10, 9,function(treo)
 affpoint = treo
 if affpoint == 1 then affty = 1.1
 elseif affpoint == 2 then affty = 1.2
@@ -7820,6 +7820,6 @@ end)
     end)
     end
     end
-if _G.WhiteListed == false and _G.kick == false then 
+if _G.WhiteListed == true and _G.kick == true then 
 game.Players.LocalPlayer:Kick("KICKED      SALUNA Notify: Go Buy Script")
 end
