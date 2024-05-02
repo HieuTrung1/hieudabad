@@ -5580,8 +5580,8 @@ end)
     page2:Slider("Haki Target %",  1, 100,99,function(gmm)
     hakitarget = gmm
     end)
-        hakispeed = 20
-    page2:Slider("Haki Speed",  1, 20,20,function(gttmm)
+        hakispeed = 2
+    page2:Slider("Haki Speed",  1, 20,2,function(gttmm)
     hakispeed = gttmm
     end)
     page2:Toggle("Auto Farm Haki",false, function(vccl)
