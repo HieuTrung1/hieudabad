@@ -5584,7 +5584,7 @@ end)
     page2:Slider("Haki Speed",  1, 20,7,function(gttmm)
     hakispeed = gttmm
     end)
-    page2:Toggle("Auto Farm Haki",false, function(vccl)
+    page2:Toggle("Auto Farm Haki",true, function(vccl)
     getgenv().concuvm = vccl
 local plrid = tostring(game.Players.LocalPlayer.UserId)
 local plr = tostring(game.Players.LocalPlayer)
