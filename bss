@@ -6003,9 +6003,9 @@ end
     page4:Label(" ┇ AFFINITIES ┇ ")
         page4:Line()
         
-affpoint = 10
-affty = 2
-page4:Slider("Affinities Point", 1, 10, 10,function(treo)
+affpoint = 9
+affty = 1.9
+page4:Slider("Affinities Point", 1, 10, 9,function(treo)
 affpoint = treo
 if affpoint == 1 then affty = 1.1
 elseif affpoint == 2 then affty = 1.2
