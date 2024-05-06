@@ -2683,8 +2683,8 @@ end
 end)
  page9:Line()
   page9:Line()
-  Speedss = 200
-  page9:Slider("Cestus Speed",0,200,200,function(too)
+  Speedss = 50
+  page9:Slider("Cestus Speed",0,200,50,function(too)
             Speedss = too
             end)
             page9:Toggle("Seastone Spam",false, function(seastone)
