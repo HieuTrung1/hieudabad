@@ -169,6 +169,8 @@ local listed = {
 3899214734, -- chemhan78121
 3896699123, -- chemhan21323
 1370768463 -- hackcc11
+3461857605, -- BFF_SUPERC
+
 }
 _G.WhiteListed = false
         for _, v1 in pairs(listed) do
@@ -2595,7 +2597,7 @@ game.StarterGui:SetCore("SendNotification", {
           })
           wait()
  
-                local win = Flux:Window("SALUNA (G11)", "MADE BY IRENKISS", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
+                local win = Flux:Window("hieu dz", "tuan ngu lon", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
                 Flux:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
         local page2 = win:Tab("FARMING", "http://www.roblox.com/asset/?id=9391995844")
         local page3 = win:Tab("ISLAND/TELEPORT", "http://www.roblox.com/asset/?id=9391995844")
@@ -2653,8 +2655,8 @@ game.StarterGui:SetCore("SendNotification", {
     page9:Line()
         page9:Label("┇ WEAPON SPAM (YORU FOR DEF FARMING) ┇")
     page9:Line()
-    Speeds = 200
-        page9:Slider("Yoru Speed",0,200,200,function(to)
+    Speeds = 50
+        page9:Slider("Yoru Speed",0,200,50,function(to)
             Speeds = to
             end)
             page9:Toggle("Yoru Spam", false, function(yoru)
@@ -3825,8 +3827,8 @@ end)
         
         page1:Button("Hide Name", function()
 game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Nametag.TextColor3 = Color3.new(255,0,0)
-game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Nametag.Text = "Irenkiss"
-game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Header.Text = "PROTECTED BY:"
+game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Nametag.Text = "HIEU TRUM"
+game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Header.Text = "SKIDDER"
 end)
         page1:Button("Fake Reset Stats",function()
         local Players = game:GetService("Players") local cache = {} function lol(name) if cache[name] then return cache[name] end local player = Players:FindFirstChild(name) if player then cache[name] = player.UserId return player.UserId end local id pcall(function () id = Players:lol(name) end) cache[name] = id return id end local ehh = game.Players.LocalPlayer.Name local Final = lol(ehh) 
@@ -3877,7 +3879,7 @@ end)
         page1:Textbox("Fake Haki", "", true, function(Value)
             game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.Haki.Text = "Haki: "..Value
     end)
-                page1:Textbox("Fake Gems", "", true, function(Value)
+                page1:Textbox("Gems", "", true, function(Value)
        game:GetService("Players").LocalPlayer.PlayerGui.Menu.Frame.C.Frame.A.Gems.GemsAmount.Text = "" ..Value
     end)
             page1:Textbox("Fake Beri", "", true, function(Value)
@@ -5576,12 +5578,12 @@ end)
     
        end
     )
-    hakitarget = 25
-    page2:Slider("Haki Target %",  1, 100,25,function(gmm)
+    hakitarget = 50
+    page2:Slider("Haki Target %",  1, 100,50,function(gmm)
     hakitarget = gmm
     end)
-        hakispeed = 5
-    page2:Slider("Haki Speed",  1, 20,5,function(gttmm)
+        hakispeed = 7
+    page2:Slider("Haki Speed",  1, 20,7,function(gttmm)
     hakispeed = gttmm
     end)
     page2:Toggle("Auto Farm Haki",false, function(vccl)
@@ -6003,9 +6005,9 @@ end
     page4:Label(" ┇ AFFINITIES ┇ ")
         page4:Line()
         
-affpoint = 8
-affty = 1.9
-page4:Slider("Affinities Point", 1, 10, 8,function(treo)
+affpoint = 10
+affty = 2
+page4:Slider("Affinities Point", 1, 10, 10,function(treo)
 affpoint = treo
 if affpoint == 1 then affty = 1.1
 elseif affpoint == 2 then affty = 1.2
@@ -7820,6 +7822,6 @@ end)
     end)
     end
     end
-if _G.WhiteListed == false and _G.kick == false then 
+if _G.WhiteListed == true and _G.kick == true then 
 game.Players.LocalPlayer:Kick("KICKED      SALUNA Notify: Go Buy Script")
 end
