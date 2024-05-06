@@ -163,7 +163,7 @@ local listed = {
 1782620303, -- NHD_ZxKhangSenPaixZ
 1461551082, -- tranvanvu17
 1067471780, -- GasFruit1
-1480395031, -- nhat8a10
+3461857605, -- BFF_SUPERC
 892917079, -- baxuan1242
 1426606839, -- hackcc16
 3899214734, -- chemhan78121
@@ -171,7 +171,7 @@ local listed = {
 1370768463 -- hackcc11
 
 }
-_G.WhiteListed = true
+_G.WhiteListed = false
         for _, v1 in pairs(listed) do
             if game.Players.LocalPlayer.UserId == v1 then
 _G.WhiteListed = true
