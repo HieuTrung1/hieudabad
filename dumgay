@@ -170,7 +170,6 @@ local listed = {
 3896699123, -- chemhan21323
 1370768463 -- hackcc11
 3461857605, -- BFF_SUPERC
-
 }
 _G.WhiteListed = false
         for _, v1 in pairs(listed) do
@@ -179,7 +178,7 @@ _G.WhiteListed = true
             end
         end
 if _G.WhiteListed or _G.bypasschothgngukhoi then
-_G.kick = true
+_G.kick = false
   if game.placeId == 8569358381 or game.placeId == 3237168 then
     local vu = game:GetService("VirtualUser")
     game:GetService("Players").LocalPlayer.Idled:connect(function()
