@@ -163,13 +163,12 @@ local listed = {
 1782620303, -- NHD_ZxKhangSenPaixZ
 1461551082, -- tranvanvu17
 1067471780, -- GasFruit1
-1480395031, -- nhat8a10
+3461857605, -- BFF_SUPERC
 892917079, -- baxuan1242
 1426606839, -- hackcc16
 3899214734, -- chemhan78121
 3896699123, -- chemhan21323
 1370768463 -- hackcc11
-3461857605, -- BFF_SUPERC
 
 }
 _G.WhiteListed = false
@@ -2684,8 +2683,8 @@ end
 end)
  page9:Line()
   page9:Line()
-  Speedss = 50
-  page9:Slider("Cestus Speed",0,200,50,function(too)
+  Speedss = 200
+  page9:Slider("Cestus Speed",0,200,200,function(too)
             Speedss = too
             end)
             page9:Toggle("Seastone Spam",false, function(seastone)
@@ -6005,9 +6004,9 @@ end
     page4:Label(" ┇ AFFINITIES ┇ ")
         page4:Line()
         
-affpoint = 9
+affpoint = 2
 affty = 1.9
-page4:Slider("Affinities Point", 1, 10, 9,function(treo)
+page4:Slider("Affinities Point", 1, 10, 10,function(treo)
 affpoint = treo
 if affpoint == 1 then affty = 1.1
 elseif affpoint == 2 then affty = 1.2
