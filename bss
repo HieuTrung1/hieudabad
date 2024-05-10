@@ -41,6 +41,7 @@ game:GetService("Players").PlayerAdded:Connect(function(r)
     end
 end)  
 local listed = {
+912304565, -- AZ65412
 1485440429, -- hieutrungze
 1566703867, -- Ekko_gaming10
 3913846312, -- anhlapro1aa
@@ -6004,8 +6005,8 @@ end
     page4:Label(" ┇ AFFINITIES ┇ ")
         page4:Line()
         
-affpoint = 2
-affty = 1.9
+affpoint = 10
+affty = 2
 page4:Slider("Affinities Point", 1, 10, 10,function(treo)
 affpoint = treo
 if affpoint == 1 then affty = 1.1
