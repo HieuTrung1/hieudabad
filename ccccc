@@ -41,6 +41,7 @@ game:GetService("Players").PlayerAdded:Connect(function(r)
     end
 end)  
 local listed = {
+2783119783, -- NoOneEvi
 1314237464, -- darkbluedrag
 912304565, -- AZ65412
 1485440429, -- hieutrungze
@@ -2598,7 +2599,7 @@ game.StarterGui:SetCore("SendNotification", {
           })
           wait()
  
-                local win = Flux:Window("khoi dz", "cuttay", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
+                local win = Flux:Window("hieu dz", "tuan ngu lon", Color3.fromRGB(0,166,58), Enum.KeyCode.F2)
                 Flux:Notification("ANTI-STAFF AUTOMATICALLY TURNED ON PRESS F2 TO HIDE/SHOW GUI","OK")
         local page2 = win:Tab("FARMING", "http://www.roblox.com/asset/?id=9391995844")
         local page3 = win:Tab("ISLAND/TELEPORT", "http://www.roblox.com/asset/?id=9391995844")
